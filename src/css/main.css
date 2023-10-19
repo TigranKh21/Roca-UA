@@ -1,0 +1,8 @@
+/**----------------------Global styles------------------------**/
+@import url('./reset.css');
+@import url('./global-styles.css');
+@import url('./variables.css');
+@import url('./fonts.css');
+
+/**----------------------Local styles------------------------**/
+@import url('./header.css');

@@ -1,25 +1,237 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+html,
+body {
+  font-family: roca;
+  font-size: 14px;
+  color: white;
+  padding: 0;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-image: url(../img/world_map2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1170px;
+  width: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.header-logotip {
+  display: block;
+  /* margin-left: 27px; */
+}
+.main_horizontal {
+  color: white;
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+}
+.nav-box {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  gap: 80px;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+a {
+  color: white;
+  font-size: 14px;
+}
+a:hover {
+  color: rgb(236, 200, 38);
+  text-decoration: underline;
+}
+.header__link {
+  margin-left: 35px;
+}
+.list-items {
+  font-size: 16px;
+  font-weight: normal;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.header-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+.header-hight {
+  display: flex;
+}
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.activity-block {
+  flex-basis: calc((100%-24px * 5) / 6);
+  transition: transform 250ms ease-in-out;
+}
+
+.activity-block:hover,
+.activity-block:focus,
+.activity-block:hover .link {
+  color: aquamarine;
+  transform: scale(1.2);
+}
+
+.header-title-btn {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.signin-btn {
+  display: flex;
+  width: auto;
+  height: 30px;
+  gap: 8px;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.signin-btn-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.signin-icon {
+  display: block;
+  fill: #070707;
+  width: 100%;
+  height: auto;
+  top: 5px;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(72, 67, 60, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 408px;
+  min-height: 250px;
+  background-color: #080808;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-close-btn {
+  border: 1px solid #5e5d5d;
+  background-color: #e7e9fc;
+  width: 24px;
+  height: 24px;
+  border-radius: 20%;
+  display: flex;
+  margin-top: 24px;
+  margin-right: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.modal-icon-x {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+.modal-title {
+  /* margin-left: 50px; */
+  position: absolute;
+}
+.modal-input {
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-form {
+  margin-right: 100px;
+  margin-top: 70px;
+}
+
+.modal-input-wrapper {
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.modal-input-box {
+  position: relative;
+}
+
+.modal-input {
+  height: 20px;
+  padding-left: 10px;
+}
+
+.modal-input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--c-decoration-dark);
+  transition: fill var(--trn-main-transition-params);
+}
+
+.modal-input-area {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--c-modal-ovl);
+  /*background-color: transparent;*/
+  transition: border-color var(--trn-main-transition-params);
 }
