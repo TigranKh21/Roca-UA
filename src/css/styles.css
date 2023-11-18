@@ -157,8 +157,9 @@ a:hover {
 
 .modal {
   display: flex;
-  flex-direction: row-reverse;
-  width: 408px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   min-height: 250px;
   background-color: #080808;
   border-radius: 10px;
@@ -166,6 +167,8 @@ a:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .modal-close-btn {
@@ -175,10 +178,10 @@ a:hover {
   height: 24px;
   border-radius: 20%;
   display: flex;
-  margin-top: 24px;
-  margin-right: 24px;
-  position: relative;
+  position: absolute;
   cursor: pointer;
+  right: 10px;
+  top: 10px;
 }
 
 .modal-icon-x {
@@ -188,10 +191,16 @@ a:hover {
 }
 
 .modal-title {
-  /* margin-left: 50px; */
+  left: 10px;
+  top: 10px;
   position: absolute;
 }
-.modal-input {
+.modal-btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .is-hidden {
@@ -201,12 +210,10 @@ a:hover {
 }
 
 .modal-form {
-  margin-right: 100px;
-  margin-top: 70px;
 }
 
 .modal-input-wrapper {
-  margin-bottom: 8px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -229,7 +236,7 @@ a:hover {
 }
 
 .modal-input-area {
-  width: 100%;
+  width: 250px;
   border-radius: 4px;
   border: 1px solid var(--c-modal-ovl);
   /*background-color: transparent;*/
