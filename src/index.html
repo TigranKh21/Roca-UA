@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en, ua">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roca CRM main page</title>
+    <title>Roca CRM</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -20,24 +20,26 @@
     <main class="container">
       <nav class="nav-box">
         <div class="activity-block">
-          <h3 class="activity-title">POS</h3>
+          <h3 class="activity-title lang-posTitle">POS</h3>
           <ul class="list-items">
             <li>
-              <a href="./distributors.html" class="link">Distributors</a>
+              <a href="./distributors.html" class="link lang-distributors"
+                >Distributors</a
+              >
             </li>
             <li>
-              <a href="" class="link">Retail</a>
+              <a href="" class="link lang-retail">Retail</a>
             </li>
             <li>
-              <a href="" class="link">E-commerce</a>
+              <a href="" class="link lang-eComm">E-commerce</a>
             </li>
             <li>
-              <a href="" class="link">DIY</a>
+              <a href="" class="link lang-diy">DIY</a>
             </li>
           </ul>
         </div>
         <div class="activity-block">
-          <h3 class="activity-title">Prices</h3>
+          <h3 class="activity-title lang-prices">Prices</h3>
           <ul class="list-items">
             <li>
               <a href="" class="link">Roca</a>
@@ -51,108 +53,63 @@
           </ul>
         </div>
         <div class="activity-block">
-          <h3 class="activity-title">Marketing</h3>
+          <h3 class="activity-title lang-mrktng">Marketing</h3>
           <ul class="list-items">
             <li>
-              <a href="" class="link">Advertisement</a>
+              <a href="" class="link lang-adv">Advertisement</a>
             </li>
             <li>
-              <a href="" class="link">POS equipment</a>
+              <a href="" class="link lang-equip">POS equipment</a>
             </li>
             <li>
-              <a href="" class="link">Fairs</a>
+              <a href="" class="link lang-fairs">Fairs</a>
             </li>
             <li>
-              <a href="" class="link">Presents</a>
+              <a href="" class="link lang-gifts">Presents</a>
             </li>
           </ul>
         </div>
         <div class="activity-block">
-          <h3 class="activity-title">Service</h3>
+          <h3 class="activity-title lang-service">Service</h3>
           <ul class="list-items">
             <li>
-              <a href="" class="link">Tech manuals</a>
+              <a href="" class="link lang-tManuals">Tech manuals</a>
             </li>
             <li>
-              <a href="" class="link">Spare parts</a>
+              <a href="" class="link lang-parts">Spare parts</a>
             </li>
             <li>
-              <a href="" class="link">Claims</a>
+              <a href="" class="link lang-claims">Claims</a>
             </li>
             <li>
-              <a href="" class="link">Service companies and plumbers</a>
+              <a href="" class="link lang-plumbers"
+                >Service companies and plumbers</a
+              >
             </li>
           </ul>
         </div>
         <div class="activity-block">
-          <h3 class="activity-title">Projects</h3>
+          <h3 class="activity-title lang-projects">Projects</h3>
           <ul class="list-item"></ul>
         </div>
         <div class="activity-block">
-          <h3 class="activity-title">Office</h3>
+          <h3 class="activity-title lang-office">Office</h3>
           <ul class="list__items">
             <li>
-              <a href="" class="link">Employees</a>
+              <a href="" class="link lang-employees">Employees</a>
             </li>
             <li>
-              <a href="" class="link">Cars</a>
+              <a href="" class="link lang-cars">Cars</a>
             </li>
             <li>
-              <a href="" class="link">Warehouse</a>
+              <a href="" class="link lang-warehouse">Warehouse</a>
             </li>
           </ul>
         </div>
       </nav>
     </main>
     <footer></footer>
-
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="modal-close-btn" data-modal-close>
-          <svg class="modal-x" width="8" height="8">
-            <use href=""></use>
-          </svg>
-        </button>
-        <p class="modal-title">Loign to your account</p>
-
-        <form class="modal-form js-modalForm">
-          <div class="modal-input-wrapper">
-            <label class="modal-label" for="user-mail"></label>
-            <div class="modal-input-box">
-              <input
-                class="modal-input modal-input-area js-loginEmail"
-                placeholder="email"
-                type="email"
-                name="email"
-                id="email"
-                required
-              />
-              <svg class="modal-input-icon" width="18" height="24">
-                <use href=""></use>
-              </svg>
-            </div>
-          </div>
-
-          <div class="modal-input-wrapper">
-            <label for="password"></label>
-            <div class="modal-input-box">
-              <input
-                class="modal-input modal-input-area js-loginPassword"
-                placeholder="password"
-                type="password"
-                name="password"
-                id="password"
-                required
-              />
-              <svg class="modal-input-icon" width="18" height="24">
-                <use href=""></use>
-              </svg>
-            </div>
-          </div>
-          <button type="submit" class="modal-btn js-modalBtn">Login</button>
-        </form>
-      </div>
-    </div>
+    <load src="./partials/loginModal.html" />
     <script src="./index.js" type="module"></script>
   </body>
 </html>
