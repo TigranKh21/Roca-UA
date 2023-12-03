@@ -3,25 +3,42 @@
   padding-top: 20px;
 }
 
-.header.container {
-  
+.header-logotip {
+  display: block;
 }
-.header-nav {
+
+.header-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header-box {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.header-title-btn {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.header.container {
+}
+
+.header-nav {
+  /*   display: flex;
+  align-items: center;
+  justify-content: space-between; */
 }
 
 .header-left-block {
-  display: flex;
+  /*   display: flex;
   gap: 10px;
-  align-items: center;
-}
-.lang-btn {
-  display: flex;
-  width: auto;
-  background-color: #000;
-  border: none;
+  align-items: center; */
 }
 
 .burger-open-btn {
@@ -55,11 +72,11 @@
   content: '';
   height: 1px;
   background-color: #fff;
-} 
+}
 
 .header-nav-list {
-    display: none;
-}  
+  display: none;
+}
 
 .header-nav-item {
   font-size: 24px;
@@ -68,38 +85,39 @@
 
 .header-nav-item::after {
   position: absolute;
-
 }
 .header-nav-link {
+}
+
+.change-lang {
+  height: 30px;
+  width: 50px;
 }
 
 @media screen and (min-width: 900px) {
   .container {
     min-width: 900px;
   }
-
-  
 }
 
 @media screen and (min-width: 1200px) {
-
   .header-nav-list {
     display: flex;
     gap: 56px;
     height: inherit;
   }
-  
+
   .burger-open-btn {
     display: none;
   }
 
-    /* Підкреслювання при ховері */
+  /* Підкреслювання при ховері */
   .header-nav-link::after {
     content: '';
     width: 90%;
     height: 1px;
     bottom: -2px;
-    left:0;
+    left: 0;
     background-color: #fff;
     transform: scaleX(0);
     transform-origin: left;
@@ -115,7 +133,6 @@
   .header-nav-item {
     position: relative;
     display: inline-block;
-    
   }
 
   .header-nav-link {
@@ -124,7 +141,7 @@
   }
 
   .header-nav-link::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 50%;
     right: -12px;
@@ -144,7 +161,7 @@
     position: absolute;
     width: 100%;
     background-color: transparent;
-    color:#000;
+    color: #000;
     top: 20px;
     left: 0;
     padding-top: 20px;
@@ -166,5 +183,4 @@
     text-decoration: none;
     transition: background-color 0.3s ease;
   }
-
 }

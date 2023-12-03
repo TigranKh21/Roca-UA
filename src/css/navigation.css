@@ -1,0 +1,45 @@
+.list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-weight: normal;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 2s ease-in-out;
+}
+
+.list-items .link {
+  font-size: 20px;
+}
+
+.activity-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease-in-out;
+}
+
+.activity-block {
+  height: 100%;
+  flex-basis: calc((100%-24px * 5) / 6);
+  transition: height 1s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0px 2px 0px rgb(114, 116, 116);
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 10px 10px 10px 10px;
+}
+
+.activity-block:hover .activity-title {
+  color: rgb(38, 200, 236);
+}
+.activity-block:hover .list-items,
+.activity-block:focus .list-items,
+.activity-block:hover .list-items {
+  max-height: 100vh;
+}
+
+.activity-block:hover {
+  box-shadow: 0px 2px 0px rgb(38, 200, 236);
+}
